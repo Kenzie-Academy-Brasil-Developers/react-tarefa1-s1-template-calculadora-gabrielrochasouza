@@ -1,0 +1,79 @@
+.calculadora {
+  background: linear-gradient(45deg, #000000, #1f1f1f);
+  color: white;
+  padding: 50px;
+  max-width: 340px;
+  border-radius: 50px;
+  box-shadow: 7px 7px 2px -4px #0bb52e;
+  animation: changeColor infinite 2s alternate;
+  position: relative;
+}
+.ball{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #0bb52e;
+    top: 15px;
+}
+.ball1{
+    left: 55px;
+}
+.ball2{
+    left: 85px;
+    background-color: #b50b0b;
+
+}
+.ball3{
+    left: 115px;
+    background-color: #2a0bb5;
+
+}
+
+@keyframes changeColor{
+    from{
+        box-shadow: 7px 7px 2px -4px #0bb52e;
+    }
+    to{
+        box-shadow: 7px 7px 2px -4px #00315e;
+    }
+}
+
+.visor {
+  border-radius: 20px;
+  width: 100%;
+  height: 90px;
+  background-color: #232323;
+  margin: 0 0 50px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-align: end;
+  box-shadow: 0px 2px 61px #011b0649 inset;
+}
+span {
+  display: block;
+  margin: 0;
+  min-height: 20px;
+}
+.inputSpan {
+  text-align: start;
+}
+.outputSpan {
+  text-align: end;
+}
+
+@media (max-width: 500px) {
+  .calculadora {
+    border-radius: 30px;
+    padding: 36px 20px 30px;
+    max-width: 270px;
+  }
+  .visor {
+    height: 60px;
+    margin: 0 0 20px;
+    font-size: 13px;
+    padding: 15px 30px;
+  }
+}
